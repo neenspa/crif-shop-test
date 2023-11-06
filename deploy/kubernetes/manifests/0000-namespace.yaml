@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: crif-shop-test
+  labels:
+    backstage.io/kubernetes-id: crif-shop-test
+    app.kubernetes.io/name: crif-shop-test
+    rht-gitops.com/janus-argocd: crif-shop-test
+spec:

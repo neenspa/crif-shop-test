@@ -1,0 +1,27 @@
+apiVersion: backstage.io/v1beta1
+kind: Component
+metadata:
+  name: crif-shop-test
+  metadata:
+  annotations:
+    argocd/app-name: crif-shop-test
+    backstage.io/adr-location: docs/adr
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-id: crif-shop-test
+    backstage.io/kubernetes-namespace: crif-shop-test
+    github.com/project-slug: neenspa/crif-shop-test
+    janus-idp.io/tekton-enabled: 'true'
+  links:
+    - url: https://console-openshift-console.apps.democp.vega.local/pipelines/ns/crif-shop-test/
+      title: Pipelines
+      icon: web
+    - url: https://console-openshift-console.apps.democp.vega.local/k8s/ns/crif-shop-test/deployments/crif-shop-test
+      title: Deployment
+      icon: web
+    - url: https://devspaces.apps.democp.vega.local/#https://github.com/neenspa/crif-shop-test?che-editor=che-incubator/che-code/latest&devfilePath=.devfile-vscode.yaml
+      title: OpenShift Dev Spaces (VS Code)
+      icon: web
+spec:
+  type: website
+  owner: user:guest
+  lifecycle: production
